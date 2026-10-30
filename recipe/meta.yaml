@@ -1,13 +1,13 @@
 {% set name = "pyraat" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2b47db9d58ae8f0a346c2a56e088ec52fc0c8db9e7619efe558a46790d6d9a7
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 912a5d1f0eb24e936035625d5157c2b4fd013540377dd1369488de56acd1591e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
